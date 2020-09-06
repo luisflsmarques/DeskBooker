@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>C:\Code\TDDCs\DeskBooker\DeskBooker\DeskBooker.Core.Tests\Processor\DeskBookingRequestProcessor.cs</title>
+    <script type="text/javascript" src="../js/dotcover.sourceview.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/dotcover.report.css" />
+  </head>
+  <body>
+    <pre id="content" class="source-code">
+using System;
+
+namespace DeskBooker.Core.Processor
+{
+    public class DeskBookingRequestProcessor
+    {
+        public DeskBookingRequestProcessor()
+        {
+        }
+
+        public DeskBookingResult BookDesk(DeskBookingRequest request)
+        {
+            return new DeskBookingResult() { 
+            
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Email = request.Email,
+                Date = request.Date
+            };
+        }
+    }
+}
+    </pre>
+    <script type="text/javascript">
+      highlightRanges([[7,9,7,45,1],[8,9,8,10,1],[9,9,9,10,1],[12,9,12,10,1],[13,13,19,15,1],[20,9,20,10,1]]);
+    </script>
+  </body>
+</html>
