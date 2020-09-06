@@ -109,5 +109,20 @@ namespace DeskBooker.Core.Processor
             //verify that the processor called the save method once when booking a desk.
             _deskBookingRepositoryMock.Verify(x => x.Save(It.IsAny<DeskBooking>()), Times.Never);
         }
+
+        [Theory] // Theory should be used when there is data parameters in the test that vary like below.
+        //the test is called twice, once for each data set - the true and false.
+        [InlineData(DeskBookingResultCode.Success, true)]
+        [InlineData(DeskBookingResultCode.NoDeskAvailable, false)]
+        public void ShouldReturnExpectedResultCode(DeskBookingResultCode expectedResultCode, bool isDeskAvailable)
+        {
+            if (!isDeskAvailable)
+            {
+                _availableDesks.Clear();
+            }
+
+            var result = _processor.BookDesk(_request);
+            Assert.Equal(expectedResultCode, result.Code);
+        }
     }
 }

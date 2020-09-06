@@ -16,7 +16,7 @@
    System.Linq.dll   v4.2.2.0
    System.Diagnostics.Debug.dll   v4.1.2.0
    System.Runtime.dll   v4.2.2.0</Info>
-  <Info>2 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
+  <Info>4 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
   <Info>0 code rule has been extracted from code.</Info>
   <Info>No dependency cycle detected in assemblies referencement graph.</Info>
   <Warning>Cannot parse a code coverage data file with an invalid file name extension.
