@@ -13,6 +13,7 @@
   <Info>Concurrent mode</Info>
   <Info>.NET Assemblies loaded from {C:\Program Files\dotnet\shared\Microsoft.NETCore.App\3.1.7} 
    mscorlib.dll   v4.0.0.0
+   System.Linq.dll   v4.2.2.0
    System.Diagnostics.Debug.dll   v4.1.2.0
    System.Runtime.dll   v4.2.2.0</Info>
   <Info>2 source files parsed ; all source files found ; all source files in-sync with PDB</Info>
